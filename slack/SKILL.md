@@ -31,18 +31,18 @@ description: Use this skill to read Slack messages and translate them to Korean,
 
 **Channel Name to ID Mapping:**
 
-- **ni**: G016KSW5GA1
-- **netops**: C0117N64B47
-- **test**: C02NE1CNQLS
+- **ni**: xxx
+- **netops**: xxx
+- **test**: xxx
 
 **Usage:**
 
 ```bash
 # Fetch from ni channel
-uv run message_handler.py fetch -c G016KSW5GA1 --json
+uv run message_handler.py fetch -c xxx --json
 
 # Post to netops channel
-uv run message_handler.py post -c C0117N64B47 "Message"
+uv run message_handler.py post -c xxx "Message"
 
 # List all available channels
 uv run message_handler.py channels
@@ -66,8 +66,12 @@ uv run message_handler.py channels
 
 ```bash
 # 1. Configure .env
+cd ~/.claude/skills/slack/scripts
+cp .env.example .env
+vi .env
+
 SLACK_USER_TOKEN=xoxb-your-token
-SLACK_CHANNEL_ID=C1234567890  # Optional default channel
+SLACK_CHANNEL_ID=xxx  # Optional default channel
 
 # 2. Install
 cd ~/.claude/skills/slack/scripts
