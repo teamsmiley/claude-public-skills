@@ -6,6 +6,10 @@
 
 ```bash
 # 1. Configure .env
+cd ~/.claude/skills/slack/scripts
+cp .env.example .env
+vi .env
+
 SLACK_USER_TOKEN=xoxb-your-token
 SLACK_CHANNEL_ID=xxx  # Optional default channel
 
